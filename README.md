@@ -213,3 +213,5 @@ running	指定正在运行的动画
 vertical-align 属性设置元素的垂直对齐方式。
 父元素要设置line-height
 使用元素要是inline-block和inline
+
+!important优先级更高
