@@ -1,9 +1,5 @@
 # knowledge
 一些常用知识点
-/data/www/web/protected/config       constant.php常量表
-/data/www/admin/protected/config    tpl模板配置表
-/data/www/web/protected/config main.php模块的注册
-
 <script src="<?php echo JS_URL;?>jquery-2.0.3.min.js"></script> 导入jq库
 PHP explode 切割字符串
 js for  forin
@@ -37,7 +33,9 @@ textarea 文本框多行  input输入框单行    placeholder=“请输入。。
 
 对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
 对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。
-INT((ACOS(SIN(B1/180*PI())*SIN(B2/180*PI())+COS(B1/180*PI())*COS(B2/180*PI())*COS(A1/180*PI()-A2/180*PI()))*180*60/PI())*100000)/100000*1.852 两经纬度之间距离
+INT((ACOS(SIN(B1/180*PI())*SIN(B2/180*PI())+COS(B1/180*PI())*COS(B2/180*PI())*COS(A1/180*PI()-A2/180*PI()))*180*60/PI())
+
+*100000)/100000*1.852 两经纬度之间距离
 object.prototype.name=value prototype 属性使您有能力向对象添加属性和方法。
 <body ontouchmove="event.preventDefault()"> 取消事件的默认动作。
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> 禁止缩放
@@ -63,7 +61,9 @@ WeixinJSBridge.invoke('closeWindow',{},function(res){
 
 //判断手机号
 		function isPhone(phone){
-			var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+			var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d
+
+{8})$/;
 			if(phone == ''){
 				// message = "手机号码不能为空！";
 				return false;
@@ -80,7 +80,13 @@ WeixinJSBridge.invoke('closeWindow',{},function(res){
 
 	//判断身份证
 		function isCardID(sId){
-			var aCity={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"} 
+			var aCity={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙
+
+江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西
+
+",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台
+
+湾",81:"香港",82:"澳门",91:"国外"} 
 			var iSum=0 ;
 			var info="" ;
 			//你输入的身份证长度或格式错误
@@ -95,7 +101,9 @@ WeixinJSBridge.invoke('closeWindow',{},function(res){
 			for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(sId.charAt(17 - i),11) ;
 			//"你输入的身份证号非法"
 			if(iSum%11!=1) return false;
-			//aCity[parseInt(sId.substr(0,2))]+","+sBirthday+","+(sId.substr(16,1)%2?"男":"女");//此次还可以判断出输入的身份证号的人性别
+			//aCity[parseInt(sId.substr(0,2))]+","+sBirthday+","+(sId.substr(16,1)%2?"男":"女");//此次还可以判
+
+断出输入的身份证号的人性别
 			return true;
 		}
 
@@ -104,7 +112,7 @@ WeixinJSBridge.invoke('closeWindow',{},function(res){
 <textarea type="text" name="helpInfo" placeholder="请输入...">
 resize: none;固定大小
 
-<?php echo SUB_DOMAIN; ?>二级域名
+
 
 　　 /^\\d+$/　　　　　　　　　　//非负整数（正整数 + 0） 
 　　/^[0-9]*[1-9][0-9]*$/　　　 //正整数 
@@ -117,18 +125,15 @@ resize: none;固定大小
 　　/^(-(([0-9]+\\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/　　  //负浮点数 
 　　/^(-?\\d+)(/　　　　　　　　 //浮点数
 
-/data/www/admin/static/tpl  模板图片
-/data/www/admin/protected/config  添加模板的config
 
-echo "<script> addHtml('{$item["nickname"]}','{$item["reply"]}','{$k}','{$item["review"]}','{$item["nickname"]}'); </script>";在php中加js，以及拼接php  用.!!!!
+
+echo "<script> addHtml('{$item["nickname"]}','{$item["reply"]}','{$k}','{$item["review"]}','{$item["nickname"]}'); 
+
+</script>";在php中加js，以及拼接php  用.!!!!
 
 <iframe frameborder=0 name="back" style="width:100%;min-height:100%;"></iframe>点击之后同一页显示数据
 
-<?php $this->widget('NoLoginWidget'); ?>监测是否微信登录
-
 explode("",string) 切割字符串变成数组
-
-<?php echo $this->indexConfig['logo'];?>首页的信息
 
 history.back(-1):直接返回当前页的上一页，数据全部消息，是个新页面
 
@@ -141,7 +146,9 @@ box-sizing: border-box;内边框
 <link rel="stylesheet" href="<?php echo STATIC_URL; ?>mqrz/css/index/detail.css" type="text/css" />
 		<script src="<?php echo JS_URL;?>jquery-2.0.3.min.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-
+
+scalable=no"/>
 /*placeholder色值*/ 
 textarea::-webkit-input-placeholder { /* WebKit browsers */ 
 color: #000; 
@@ -183,7 +190,11 @@ alternate-reverse动画在奇数次（1、3、5...）反向播放，在偶数次
 animation-fill-mode	规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。
 none 不执行 默认
 forwards 在动画结束后（由 animation-iteration-count 决定），动画将应用该属性值。
-backwards 动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值。这些都是 from 关键帧中的值（当 animation-direction 为 "normal" 或 "alternate" 时）或 to 关键帧中的值（当 animation-direction 为 "reverse" 或 "alternate-reverse" 时）。	
+backwards 动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值。这些都是 from 关键帧中的值（当 
+
+animation-direction 为 "normal" 或 "alternate" 时）或 to 关键帧中的值（当 animation-direction 为 "reverse" 或 "alternate-
+
+reverse" 时）。	
 both 动画遵循 forwards 和 backwards 的规则。也就是说，动画会在两个方向上扩展动画属性。
 
 animation-play-state	指定动画是否正在运行或已暂停。
