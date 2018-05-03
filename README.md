@@ -167,6 +167,11 @@ initial设置属性为其默认值
 inherit	从父元素继承属性
 
 css3动画
+@keyframes name
+{
+	from {top:1rem;}
+	to {top:3rem;}
+}
 animation: name duration timing-function delay iteration-count direction fill-mode play-state; 
 
 animation-name	指定要绑定到选择器的关键帧的名称
@@ -215,3 +220,8 @@ vertical-align 属性设置元素的垂直对齐方式。
 使用元素要是inline-block和inline
 
 !important优先级更高
+
+clip-path:polygon(0 0,calc(100% - 4rem) 0,calc(100% - 4rem) 3.5rem,100% 3.5rem,100% 100%,0 100%)//不规则矩形 里面是xy坐标
+clip-path:circle(30px at 35px 35px)//圆
+clip-path:circle(65px 30px at 125px 40px)//椭圆
+clip:rect(top,right,bottom,left)//因为只能剪裁矩形所以基本被弃用了
