@@ -225,3 +225,7 @@ clip-path:polygon(0 0,calc(100% - 4rem) 0,calc(100% - 4rem) 3.5rem,100% 3.5rem,1
 clip-path:circle(30px at 35px 35px)//圆
 clip-path:circle(65px 30px at 125px 40px)//椭圆
 clip:rect(top,right,bottom,left)//因为只能剪裁矩形所以基本被弃用了
+//隐藏滚动轴
+::-webkit-scrollbar{
+  display:none;
+}
