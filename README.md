@@ -229,3 +229,6 @@ clip:rect(top,right,bottom,left)//因为只能剪裁矩形所以基本被弃用�
 ::-webkit-scrollbar{
   display:none;
 }
+//背景图固定
+background-image: url(); 
+  background-attachment: fixed;
