@@ -310,3 +310,5 @@ startDrag(obj, obj);
 屏幕可用工作区宽度：window.screen.availWidth
 
 ！function(){}() , (function(){})() , (function(){}()) , new function(){} , void function(){}();封装时候用的匿名函数
+
+多张图片上传的时候input一定要加name  $_File才能取到值
