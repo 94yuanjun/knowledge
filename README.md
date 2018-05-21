@@ -312,3 +312,5 @@ startDrag(obj, obj);
 ！function(){}() , (function(){})() , (function(){}()) , new function(){} , void function(){}();封装时候用的匿名函数
 
 多张图片上传的时候input一定要加name  $_File才能取到值
+
+php""会执行内部变量 ''不会执行   换行PHP_EOL
