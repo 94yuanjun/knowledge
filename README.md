@@ -41,14 +41,18 @@ object.prototype.name=value prototype 属性使您有能力向对象添加属性
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> 禁止缩放
 /data/www/admin/protected/config 添加分类的表
 
-/*两行省略*/
-width:100%;
-color: #000000;
+/*一行表示**/
 overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+/***2行表示**/
 display: -webkit-box;
+overflow: hidden;
+text-overflow: ellipsis;
+word-wrap: break-word;
+white-space: normal !important;
 -webkit-line-clamp: 2;
 -webkit-box-orient: vertical;
-word-break: break-all;
 
 -webkit-box-sizing:border-box;内边框
 
