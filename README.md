@@ -15,12 +15,8 @@ $.ajax({
 		data: {data:data,id:<?php echo $id; ?>},
 		dataType: 'json',
 		success: function(data){
-			console.log(data);
 			if(data.status == 'success'){
-				// var art_link = ;
-				// location.href = art_link;
-				console.log(data);
-				alert('success');
+				alert(data.msg);
 			}else{
 				alert(data.msg);
 			}
@@ -318,3 +314,20 @@ startDrag(obj, obj);
 多张图片上传的时候input一定要加name  $_File才能取到值
 
 php""会执行内部变量 ''不会执行   换行PHP_EOL
+
+pointer-events: none;取消点击事件
+
+//离开页面
+window.onbeforeunload=function (){
+alert("===onbeforeunload===");
+if(event.clientX>document.body.clientWidth && event.clientY < 0 || event.altKey){
+     alert("你关闭了浏览器");
+}else{
+     alert("你正在刷新页面");
+}
+}
+
+监听浏览器返回键、后退、上一页事件（popstate）操作返回键
+window.addEventListener("popstate", function(){
+    //doSomething
+}, false)
