@@ -331,3 +331,17 @@ if(event.clientX>document.body.clientWidth && event.clientY < 0 || event.altKey)
 window.addEventListener("popstate", function(){
     //doSomething
 }, false)
+
+substr_replace(string,replacement,start,length)
+string	必需。规定要检查的字符串。
+replacement	必需。规定要插入的字符串。
+start	
+必需。规定在字符串的何处开始替换。
+正数 - 在第 start 个偏移量开始替换
+负数 - 在从字符串结尾的第 start 个偏移量开始替换
+0 - 在字符串中的第一个字符处开始替换
+charlist	
+可选。规定要替换多少个字符。
+正数 - 被替换的字符串长度
+负数 - 从字符串末端开始的被替换字符数
+0 - 插入而非替换
