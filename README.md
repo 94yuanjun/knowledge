@@ -482,3 +482,12 @@ charlist
 33 IP地址：\d+\.\d+\.\d+\.\d+ (提取IP地址时有用)
 
 34 IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))
+
+function goBack(){
+						if(document.referrer==''){
+							location.href='http://bhjiguan.wxshidai.com';
+						}else{
+							window.history.go(-1);
+							return false;
+						}
+					}
