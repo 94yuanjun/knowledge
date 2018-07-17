@@ -483,6 +483,7 @@ charlist
 
 34 IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))
 
+//返回前一页 判断是否有前一页
 function goBack(){
 						if(document.referrer==''){
 							location.href='http://bhjiguan.wxshidai.com';
