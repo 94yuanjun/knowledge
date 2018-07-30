@@ -492,3 +492,7 @@ function goBack(){
 							return false;
 						}
 					}
+
+input file里面
+accept="image/*;capture=camera" 直接调用相机
+accept="image/*" 调用相机 图片或者相册
