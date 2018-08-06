@@ -496,3 +496,6 @@ function goBack(){
 input file里面
 accept="image/*;capture=camera" 直接调用相机
 accept="image/*" 调用相机 图片或者相册
+
+//dirname() 函数返回路径中的目录部分。
+require_once(dirname(__FILE__).'/xx.php');
