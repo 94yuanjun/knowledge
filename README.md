@@ -499,3 +499,5 @@ accept="image/*" 调用相机 图片或者相册
 
 //dirname() 函数返回路径中的目录部分。
 require_once(dirname(__FILE__).'/xx.php');
+//页面上不能复制的用这个
+javascript:document.body.contentEditable='true';document.designMode='on'; void(0);
