@@ -61,9 +61,7 @@ WeixinJSBridge.invoke('closeWindow',{},function(res){
 
 //判断手机号
 		function isPhone(phone){
-			var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d
-
-{8})$/;
+			var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
 			if(phone == ''){
 				// message = "手机号码不能为空！";
 				return false;
