@@ -306,6 +306,7 @@ startDrag(obj, obj);
 屏幕分辨率的宽：window.screen.width 
 屏幕可用工作区高度：window.screen.availHeight 
 屏幕可用工作区宽度：window.screen.availWidth
+//display:none 的时候获取的高度有问题
 
 ！function(){}() , (function(){})() , (function(){}()) , new function(){} , void function(){}();封装时候用的匿名函数
 
