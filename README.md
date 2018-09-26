@@ -500,3 +500,27 @@ accept="image/*" 调用相机 图片或者相册
 require_once(dirname(__FILE__).'/xx.php');
 //页面上不能复制的用这个
 javascript:document.body.contentEditable='true';document.designMode='on'; void(0);
+
+移动端web禁用长按选中功能
+方案一
+* {
+   -webkit-user-select:none;
+   -moz-user-select:none;
+   -ms-user-select:none;
+   user-select:none;	
+}
+问题一：这样会让iOS的input框无法聚焦
+
+解决方案：
+input{-webkit-user-select:auto;}
+问题二：如果需要长按发送语音，禁用长按之后，无法长按发送语音
+
+解决方案：
+<div class="voice-speak" ontouchstart="return false;" style="display: none" id="startRecord"><span>按住说话</span></div>
+
+方法二：
+禁用点击事件
+div { pointer-events: none;}
+方法三：
+禁用系统默认事件。后期的CLICK不能用了
+window.ontouchstart = function(e) { e.preventDefault(); };
