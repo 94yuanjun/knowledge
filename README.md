@@ -524,3 +524,11 @@ div { pointer-events: none;}
 方法三：
 禁用系统默认事件。后期的CLICK不能用了
 window.ontouchstart = function(e) { e.preventDefault(); };
+
+:root { 
+--line-height: 20; 
+} 
+p { 
+line-height: var(--line-height)px; 
+} 
+root里面写默认的数据可以复用
